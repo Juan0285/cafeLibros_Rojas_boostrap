@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+/* >>>>>>>>>>>HEADER>>>>>>>>>>>>>>> */
+
+.header{
+    width: 100%;
+    height: 8vh;
+   background:linear-gradient(to right, rgb(47, 47, 48), grey);
+   
+}
+.header__div{
+    height: 100%;
+    width: 10%;
+    /* border:2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__div img{
+    height: 80%;
+}
+/* >>>>>>>>>>>NAV>>>>>>>>>>>>>>> */
+.nav{
+    width: 100%;
+    height: 6vh;
+    background-color: #444;
+    position: sticky;
+    top: 0;
+}
+.nav__ul{
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+}
+.nav__li{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: all;
+    transition-duration: .5s;
+}
+    .nav__li:hover{
+        background-color: rgb(0, 0, 0,.3);
+    }
+    .nav__li a{
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+        color: #fff;
+    }
+
+/* >>>>>>>>>>>CONTENIDO>>>>>>>>>>>>>>> */
+.main{
+width: 100%;
+height: 90vh;
+display: flex;
+font-family: 'Roboto', sans-serif;
+}
+
+/* ------------SECCIÓN 1---------------- */
+
+.main__section1{
+    width: 60%;
+    background-color: #ccc;
+    display: flex;   
+}
+    .main__section1 div{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+    }
+    .main__section1 p{
+        width: 95%;
+        text-align: justify;
+        margin-top: 2%;
+        font-size: 1rem;
+        color: rgb(83, 87, 97);
+        font-weight: 100;
+    }
+
+     .main__section1 h4{
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: rgb(167, 144, 17);
+        background-color: rgb(50, 65, 65);
+        width: 100%; 
+        padding-left: 8px;
+    }
+     .mapa{
+         width: 70%;
+         height: auto;
+         background-image: url(../img/main/Contacto/mapa.png);
+         background-position: center;
+         background-size: cover;
+     }
+
+/* ------------SECCIÓN 2---------------- */
+
+.main__section2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: rgb(182, 182, 182); 
+}
+    .main__section2 fieldset{
+        width: 80%;
+        padding-left: 5%;
+        padding-right: 3%;
+        padding-bottom: 3%;
+        margin: 1rem;
+        font-size: 1rem; 
+        color: rgb(83, 87, 97);
+    }
+    .main__section2 form {
+        display: flex;
+        flex-direction: column;
+        font-size: .8rem; 
+        color: rgb(83, 87, 97);
+    }
+        .main__section2 form div {
+            display: flex;  
+            margin-top: 2%;  
+        }
+            .main__section2 form div input {
+                width: 80%;   
+                margin-left: 2%;
+            }
+    .chekbox{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3%;
+    }
+        .chekbox label{
+            width: 80%;
+            border-bottom: 1px solid rgb(0, 0, 0,.3);
+        }
+    
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    }
+
+    .botones input {
+    width: 45%;
+    height: 3vh;
+    background-color: rgb(63, 68, 52);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 2px;
+    transition-property: all;
+    transition-duration: .5s;
+    }
+    .botones input:hover {
+        background-color: rgb(143, 196, 31);
+        color: rgb(56, 59, 59);
+    }
+
+/* >>>>>>>>>>>FOOTER>>>>>>>>>>>>>>> */
+
+.footer{
+    width: 100%;
+    height: 8vh;
+    background-color: #222;
+}
+.footer__div{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+    .footer__div a{
+    height: 70%;
+    width: 29%;
+    display: flex;
+    justify-content: center;
+    }
+    .footer__div a img{
+        height: 100%;
+    }
