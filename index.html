@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
 <body>
@@ -15,38 +17,82 @@
 
     <!-- >>>>>>>>>>>RAMA2>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
-    <!-- >>>>>>>>>>>HEADER>>>>>>>>>>>>>>> -->
-
+     <!-- >>>>>>>>>>>HEADER NAV>>>>>>>>>>>>>>> -->
     <header class="header">
-        <div class="header__div">
-            <img src="img/header/Logo.png" alt="logo">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/header/logo.jpg" width="55" height="55" class="d-inline-block align-text-top">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="local.html">Local</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="paraLlevar.html">Para Llevar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="conocenos.html">Conocenos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
     </header>
-
-    <!-- >>>>>>>>>>>NAV>>>>>>>>>>>>>>> -->
-
-    <nav class="nav">
-        <ul class="nav__ul">
-            <li class="nav__li"><a href="index.html">Inicio</a></li>
-            <li class="nav__li"><a href="local.html">En el local</a></li>
-            <li class="nav__li"><a href="paraLlevar.html">Para llevar</a></li>
-            <li class="nav__li"><a href="conocenos.html">Conocenos</a></li>
-            <li class="nav__li"><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-
      <!-- >>>>>>>>>>>CONTENIDO>>>>>>>>>>>>>>> --> 
+
+     
+     <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
 
     <main class="main">
 
+        
+
         <!-- ------------section1----------- -->
-        <section class="main__section1">
+        <!-- <section class="main__section1"> -->
             <!-- ----------------------------- -->
-            <div class="main__div1">
+            <!-- <div class="main__div1">
                 <a href=""><p><</p></a>
-            </div>
+            </div> -->
             <!-- ----------------------------- -->
-            <div class="main__div2">
+            <!-- <div class="main__div2">
                 <h1>Cafetería y pastelería</h1>
                 <img src="img/main/index/marcaBar.png" alt="marcaBar">
                 <p>Alberdi 252</p>
@@ -55,12 +101,12 @@
                     <button><a href="paraLlevar.html">Para llevar</a></button>
                 </div>
                 <a id="puntitos"  href=""><P>...</P></a>
-            </div>
+            </div> -->
             <!-- ----------------------------- -->
-            <div class="main__div3">
+            <!-- <div class="main__div3">
                 <a href=""><p>></p></a>
             </div>
-        </section>
+        </section> -->
         <!-- ------------section2----------- -->
         <section class="main__section2">
             <article class="main__art main__art--1"></article>
@@ -89,5 +135,8 @@
                 <img src="img/footer/Instagram.png" alt="instagram"></a>
         </div>
     </footer>
+
+    <!-- >>>>>>>>>>>scrip de boostrap>>>>>>>>>>>>>>> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
