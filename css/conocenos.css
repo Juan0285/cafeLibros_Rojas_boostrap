@@ -3,232 +3,30 @@
     padding: 0;
 }
 
-a{
-    text-decoration: none;
-}
-body{
-    background-color: rgb(5, 5, 5);
-}
-/* >>>>>>>>>>>HEADER>>>>>>>>>>>>>>> */
 
-.header{
-    width: 100%;
-    height: 8vh;
-    background:linear-gradient(to right, rgb(47, 47, 48), grey);
-}
-.header__div{
-    height: 100%;
-    width: 10%;
-    /* border:2px solid black; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.header__div img{
-    height: 80%;
-}
-/* >>>>>>>>>>>NAV>>>>>>>>>>>>>>> */
-.nav{
-    width: 100%;
-    height: 6vh;
-    background-color: #444;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-.nav__ul{
-    display: flex;
-    justify-content: flex-end;
-    height: 100%;
-}
-.nav__li{
-    height: 100%;
-    width: 10%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-property: all;
-    transition-duration: .5s;
-}
-    .nav__li:hover{
-        background-color: rgb(0, 0, 0,.3);
-    }
-    .nav__li a{
-        font-family: 'Roboto', sans-serif;
-        text-decoration: none;
-        color: #fff;
-    }
 
 /* >>>>>>>>>>>CONTENIDO>>>>>>>>>>>>>>> */
-.main{
-    background-color: rgb(5, 5, 5);
-    margin: auto;
-    width: 90%;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100%;
-    grid-template-areas: "fgrande fotitos";
-    /* row-gap: 10px;
-    column-gap: 10px;
-     */
-                        }   
 
-    /* ---------1 Foto Grande Unicada a la Izquierda------ */
+/* -----------margen del contenedor general------- */
+.margenSup{
+    margin-top: 76px;
+}
 
-    .fotogrande{
-        height: 100%;
-        width: 100%;
-        grid-area:fgrande;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .fotogrande__div{
-        background-image: url(../img/main/conocenos/fotogrande.png);
-        width: 97%;
-        height: 97%;
-        background-size: cover;
-    }
-
-    /* ----------16 Fotos chicas Ubicadas a la derecha-------- */
-    .catalogo{
-        height: 100%;
-        width: 100%;
-        grid-area:fotitos;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .todasLasFotos{
-        height: 97%;
-        width: 97%;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(4,1fr);
-        grid-template-areas: "fotito1 fotito2 fotito3 fotito4"
-                             "fotito5 fotito6 fotito7 fotito8"
-                             "fotito9 fotito10 fotito11 fotito12"
-                             "fotito13 fotito14 fotito15 fotito16"; 
-        row-gap: 8px;
-        column-gap: 8px;
-    }
-
-    /* --------efecto foto hover------------- */
-        .foto__hover{
-            width: 100%;
-            height: 100%;
-        }
-        .foto__hover:hover{
-        opacity: .6;
-        transform: scale(95%);
-        cursor: pointer;}
-        /* -------------------------------------- */
-
-        .foto1{
-            grid-area:fotito1;
-            background-image: url(../img/main/conocenos/local1.png);
-            background-size: cover;
-            transition-property: all;
-            transition-duration:.5s;}
-        .foto2{
-            grid-area:fotito2;
-            background-image: url(../img/main/conocenos/local2.png);
-            background-size: cover;
-            transition-property: all;
-            transition-duration:.5s;}
-            
-        .foto3{
-            grid-area:fotito3;
-            background-image: url(../img/main/conocenos/local3.png);
-            background-size: cover;
-            transition-property: all;
-            transition-duration:.5s;}          
-        .foto4{
-            grid-area:fotito4;
-            background-image: url(../img/main/conocenos/local4.png);
-            background-size: cover;
-            transition-property: all;
-            transition-duration:.5s;}
-        .foto5{
-            grid-area:fotito5;
-            background-image: url(../img/main/conocenos/local5.png);
-            background-size: cover;
-            transition-property: all;
-            transition-duration:.5s;}
-        .foto6{
-            grid-area:fotito6;
-            background-image: url(../img/main/conocenos/local6.png);
-            background-size: cover;
-            transition-property: all;
-            transition-duration:.5s;}
-        .foto7{
-            grid-area:fotito7;
-            background-image: url(../img/main/conocenos/local7.png);
-            background-size: cover;
-            transition-property: all;
-            transition-duration:.5s;}
-        .foto8{
-            grid-area:fotito8;
-            background-image: url(../img/main/conocenos/local8.png);
-            background-size: cover;
-            transition-property: all;
-            transition-duration:.5s;}
-        .foto9{
-            grid-area:fotito9;
-            background-image: url(../img/main/conocenos/local9.png);
-            background-size: cover;
-            transition-property: all;
-            transition-duration:.5s;}
-        .foto10{
-            grid-area:fotito10;
-            background-image: url(../img/main/conocenos/local10.png);
-            background-size: cover;
-            transition-property: all;
-            transition-duration:.5s;}
-        .foto11{
-            grid-area:fotito11;
-            background-image: url(../img/main/conocenos/local11.png);
-            background-size: cover;
-            transition-property: all;
-            transition-duration:.5s;}
-        .foto12{
-            grid-area:fotito12;
-            background-image: url(../img/main/conocenos/local12.png);
-            background-size: cover;
-            transition-property: all;
-            transition-duration:.5s;}
-        .foto13{
-            grid-area:fotito13;
-            background-image: url(../img/main/conocenos/local13.png);
-            background-size: cover;
-            transition-property: all;
-            transition-duration:.5s;}
-        .foto14{
-            grid-area:fotito14;
-            background-image: url(../img/main/conocenos/local14.png);
-            background-size: cover;
-            transition-property: all;
-            transition-duration:.5s;}
-        .foto15{
-            grid-area:fotito15;
-            background-image: url(../img/main/conocenos/local15.png);
-            background-size: cover;
-            transition-property: all;
-            transition-duration:.5s;}
-        .foto16{
-            grid-area:fotito16;
-            background-image: url(../img/main/conocenos/local16.png);
-            background-size: cover;
-            transition-property: all;
-            transition-duration:.5s;
-        }
+/* -----------hover de las fotitos--------------- */
+.sobre_img{
+    transition-property: all;
+    transition-duration: .3s;
+}
+.sobre_img:hover{
+    transform: scale(.95);
+}
 
 /* >>>>>>>>>>>FOOTER>>>>>>>>>>>>>>> */
 .footer{
     width: 100%;
     height: 8vh;
     background-color: #222;
+ 
 }
 .footer__div{
     height: 100%;

@@ -17,241 +17,439 @@
 
     
      <!-- >>>>>>>>>>>HEADER NAV>>>>>>>>>>>>>>> -->
-     <header class="header">
+    
+    <header class="fixed-top">
+      <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="img/header/logo.jpg" width="55" height="55" class="d-inline-block align-text-top">
-                </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="local.html">Local</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="paraLlevar.html">Para Llevar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="conocenos.html">Conocenos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/header/Logo.png" class="img-fluid" alt=" logoBar"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="local.html">En el Local</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="paraLlevar.html">Para Llevar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="conocenos.html">Conocenos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>                
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
             </div>
-          </nav>
-        </header>
+          </div>
+        </nav>
+      </div>
+    </header>
         
     <!-- >>>>>>>>>>>CONTENIDO>>>>>>>>>>>>>>> --> 
+    <main class= "container positionRelative mb-5">
+      <h1 class="text-warning">¡Elégí lo que quieras que te lo llevamos! </h1>
+      <section class="row">
 
-    <main class="main">
 
-        <!-- -----------producto 1---------------- -->
-
-        <div class="main__div main__div--1">
-            <div class="main__div--img img1"></div>
-            <div class="main__div--text">
-                <h3>Café más 2 medialuna</h3>
-                <p>Café mediano o jarrita / medialunas de manteca</p>
-                <h3 class="precio">$180</h3>
-                <div class="opciones">
-                    <div>
-                         <label for="mercado">Mercado Pago</label>
-                         <input type="radio" name="radio1">
-                    </div>
-                    <div>
-                         <label for="tarjeta">Tarjeta de crédito</label>
-                         <input type="radio" name="radio1">
-                    </div>
-                 </div>
-                 <button>Pagar</button>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center">
+          <div class="card mt-2 bg-warning">
+            <img src="img/main/para_llevar/producto1.png" class="img-fluid sobre_img" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">$150</h5>
+              <p class="card-text">Barra de Cereral</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Mercado Pago
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Tarjeta de Crédito
+                </label>
+              </div>
+              <div class="btn-group mb-xl-2" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ciudad
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Resistencia</a></li>
+                  <li><a class="dropdown-item" href="#">Corrientes</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-success">¡Es mío!</button>
             </div>
+          </div>
         </div>
 
-        <!-- -----------producto 2---------------- -->
-
-        <div class="main__div main__div--2">
-            <div class="main__div--img img2"></div>
-            <div class="main__div--text">
-                <h3>Galletitas Havanna</h3>
-                <p>Caja de 12 galletitas de Limón Havnna</p>
-                <h3 class="precio">$210</h3>
-                <div class="opciones">
-                   <div>
-                        <label for="mercado">Mercado Pago</label>
-                        <input type="radio" name="radio2">
-                   </div>
-                   <div>
-                        <label for="tarjeta">Tarjeta de crédito</label>
-                        <input type="radio" name="radio2">
-                   </div>
-                </div>
-                <button>Pagar</button>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center">
+          <div class="card mt-2 bg-secondary bg-opacity-25">
+            <img src="img/main/para_llevar/producto2.png" class="img-fluid sobre_img" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">$650</h5>
+              <p class="card-text">Galletitas de Limon.</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault3">
+                  Mercado Pago
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+                <label class="form-check-label" for="flexRadioDefault4">
+                  Tarjeta de Crédito
+                </label>
+              </div>
+              <div class="btn-group mb-xl-2" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ciudad
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Resistencia</a></li>
+                  <li><a class="dropdown-item" href="#">Corrientes</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-success">¡Es mío!</button>
             </div>
+          </div>
         </div>
 
-        <!-- -----------producto 3---------------- -->
-
-        <div class="main__div main__div--3">
-            <div class="main__div--img img3"></div>
-            <div class="main__div--text">
-                <h3>Café o Té con leche</h3>
-                <p>Café mediano con leche</p>
-                <h3 class="precio">$150</h3>
-                <div class="opciones">
-                    <div>
-                         <label for="mercado">Mercado Pago</label>
-                         <input type="radio" name="radio3">
-                    </div>
-                    <div>
-                         <label for="tarjeta">Tarjeta de crédito</label>
-                         <input type="radio" name="radio3">
-                    </div>
-                 </div>
-                 <button>Pagar</button>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center"> 
+          <div class="card mt-2 bg-warning">
+            <img src="img/main/para_llevar/producto3.png" class="img-fluid sobre_img" alt="...">
+            <div class="card-body alto">
+              <h5 class="card-title">$150</h5>
+              <p class="card-text">Café para Llevar</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+                <label class="form-check-label" for="flexRadioDefault5">
+                  Mercado Pago
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6" checked>
+                <label class="form-check-label" for="flexRadioDefault6">
+                  Tarjeta de Crédito
+                </label>
+              </div>
+              <div class="btn-group mb-xl-2" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ciudad
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Resistencia</a></li>
+                  <li><a class="dropdown-item" href="#">Corrientes</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-success">¡Es mío!</button>
             </div>
+          </div>
         </div>
 
-        <!-- -----------producto 4---------------- -->
-
-        <div class="main__div main__div--4">
-            <div class="main__div--img img4"></div>
-            <div class="main__div--text">
-                <h3>Jugo de Naranja Exprimido</h3>
-                <p>Puede ser tambien pomelo o Pomelo rosado.</p>
-                <h3 class="precio">$150</h3>
-                <div class="opciones">
-                    <div>
-                         <label for="mercado">Mercado Pago</label>
-                         <input type="radio" name="radio4">
-                    </div>
-                    <div>
-                         <label for="tarjeta">Tarjeta de crédito</label>
-                         <input type="radio" name="radio4">
-                    </div>
-                 </div>
-                 <button>Pagar</button>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center"> 
+          <div class="card mt-2 bg-secondary bg-opacity-25">
+            <img src="img/main/para_llevar/producto4.png" class="img-fluid sobre_img" alt="...">
+            <div class="card-body alto">
+              <h5 class="card-title">$150</h5>
+              <p class="card-text">Jugo exprimido</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7">
+                <label class="form-check-label" for="flexRadioDefault7">
+                  Mercado Pago
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8" checked>
+                <label class="form-check-label" for="flexRadioDefault8">
+                  Tarjeta de Crédito
+                </label>
+              </div>
+              <div class="btn-group mb-xl-2" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ciudad
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Resistencia</a></li>
+                  <li><a class="dropdown-item" href="#">Corrientes</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-success">¡Es mío!</button>
             </div>
+          </div>
         </div>
 
-        <!-- -----------producto 5---------------- -->
-
-        <div class="main__div main__div--5">
-            <div class="main__div--img img5"></div>
-            <div class="main__div--text">
-                <h3>Milkshake</h3>
-                <p>Batido con frutas, chocolate, turrón y helado/p>
-                <h3 class="precio">$200</h3>
-                <div class="opciones">
-                    <div>
-                         <label for="mercado">Mercado Pago</label>
-                         <input type="radio" name="radio5">
-                    </div>
-                    <div>
-                         <label for="tarjeta">Tarjeta de crédito</label>
-                         <input type="radio" name="radio5">
-                    </div>
-                 </div>
-                 <button>Pagar</button>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center"> 
+          <div class="card mt-2 bg-warning">
+            <img src="img/main/para_llevar/producto5.png" class="img-fluid sobre_img" alt="...">
+            <div class="card-body alto">
+              <h5 class="card-title">$210</h5>
+              <p class="card-text">Batido frutales.</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault9">
+                <label class="form-check-label" for="flexRadioDefault9">
+                  Mercado Pago
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault10" checked>
+                <label class="form-check-label" for="flexRadioDefault10">
+                  Tarjeta de Crédito
+                </label>
+              </div>
+              <div class="btn-group mb-xl-2" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ciudad
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Resistencia</a></li>
+                  <li><a class="dropdown-item" href="#">Corrientes</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-success">¡Es mío!</button>
             </div>
+          </div>
         </div>
 
-        <!-- -----------producto 6---------------- -->
-
-        <div class="main__div main__div--6">
-            <div class="main__div--img img6"></div>
-            <div class="main__div--text">
-                <h3>Porción de Chipa</h3>
-                <p>La porción de chipa son 100gr (10 chipas)</p>
-                <h3 class="precio">$210</h3>
-                <div class="opciones">
-                    <div>
-                         <label for="mercado">Mercado Pago</label>
-                         <input type="radio" name="radio6">
-                    </div>
-                    <div>
-                         <label for="tarjeta">Tarjeta de crédito</label>
-                         <input type="radio" name="radio6">
-                    </div>
-                 </div>
-                 <button>Pagar</button>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center"> 
+          <div class="card mt-2 bg-secondary bg-opacity-25">
+            <img src="img/main/para_llevar/producto6.png" class="img-fluid sobre_img" alt="...">
+            <div class="card-body alto">
+              <h5 class="card-title">$320</h5>
+              <p class="card-text">Porción de Chipá.</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault11">
+                <label class="form-check-label" for="flexRadioDefault11">
+                  Mercado Pago
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault12" checked>
+                <label class="form-check-label" for="flexRadioDefault12">
+                  Tarjeta de Crédito
+                </label>
+              </div>
+              <div class="btn-group mb-xl-2" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ciudad
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Resistencia</a></li>
+                  <li><a class="dropdown-item" href="#">Corrientes</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-success">¡Es mío!</button>
             </div>
+          </div>
         </div>
 
-        <!-- -----------producto 7---------------- -->
-
-        <div class="main__div main__div--7">
-            <div class="main__div--img img7"></div>
-            <div class="main__div--text">
-                <h3>Cerveza corona</h3>
-                <p>contamos con esta rica cerveza de 300cc</p>
-                <h3 class="precio">$185</h3>
-                <div class="opciones">
-                    <div>
-                         <label for="mercado">Mercado Pago</label>
-                         <input type="radio" name="radio7">
-                    </div>
-                    <div>
-                         <label for="tarjeta">Tarjeta de crédito</label>
-                         <input type="radio" name="radio7">
-                    </div>
-                 </div>
-                 <button>Pagar</button>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center"> 
+          <div class="card mt-2 bg-warning">
+            <img src="img/main/para_llevar/producto7.png" class="img-fluid sobre_img" alt="...">
+            <div class="card-body alto">
+              <h5 class="card-title">$350</h5>
+              <p class="card-text">Ceveza Corona 330 cc.</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault13">
+                <label class="form-check-label" for="flexRadioDefault13">
+                  Mercado Pago
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault14" checked>
+                <label class="form-check-label" for="flexRadioDefault14">
+                  Tarjeta de Crédito
+                </label>
+              </div>
+              <div class="btn-group mb-xl-2" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ciudad
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Resistencia</a></li>
+                  <li><a class="dropdown-item" href="#">Corrientes</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-success">¡Es mío!</button>
             </div>
-        </div>   
-
-        <!-- -----------producto 8---------------- -->
-
-        <div class="main__div main__div--8">
-            <div class="main__div--img img8"></div>
-            <div class="main__div--text">
-                <h3>caja de Alfajores Havanna x 12</h3>
-                <p>Alfajor Negro /blanco / Nuez</p>
-                <h3 class="precio">$1200</h3>
-                <div class="opciones">
-                    <div>
-                         <label for="mercado">Mercado Pago</label>
-                         <input type="radio" name="radio8">
-                    </div>
-                    <div>
-                         <label for="tarjeta">Tarjeta de crédito</label>
-                         <input type="radio" name="radio8">
-                    </div>
-                 </div>
-                 <button>Pagar</button>
-            </div>
+          </div>
         </div>
 
-        <!-- -----------producto 9---------------- -->
-
-        <div class="main__div main__div--9">
-            <div class="main__div--img img9"></div>
-            <div class="main__div--text">
-                <h3>Alfajor Havanna por unidad</h3>
-                <p>Alfajor Negro /blanco / Nuez</p>
-                <h3 class="precio">$160</h3>
-                <div class="opciones">
-                    <div>
-                         <label for="mercado">Mercado Pago</label>
-                         <input type="radio" name="radio9">
-                    </div>
-                    <div>
-                         <label for="tarjeta">Tarjeta de crédito</label>
-                         <input type="radio" name="radio9">
-                    </div>
-                 </div>
-                 <button>Pagar</button>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center"> 
+          <div class="card mt-2 bg-secondary bg-opacity-25">
+            <img src="img/main/para_llevar/producto8.png" class="img-fluid sobre_img" alt="...">
+            <div class="card-body alto">
+              <h5 class="card-title">$1120</h5>
+              <p class="card-text">Alfajores havanna x 12</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault15">
+                <label class="form-check-label" for="flexRadioDefault15">
+                  Mercado Pago
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault16" checked>
+                <label class="form-check-label" for="flexRadioDefault16">
+                  Tarjeta de Crédito
+                </label>
+              </div>
+              <div class="btn-group mb-xl-2" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ciudad
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Resistencia</a></li>
+                  <li><a class="dropdown-item" href="#">Corrientes</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-success">¡Es mío!</button>
             </div>
+          </div>
         </div>
-    
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center"> 
+          <div class="card mt-2 bg-warning">
+            <img src="img/main/para_llevar/producto9.png" class="img-fluid sobre_img" alt="...">
+            <div class="card-body alto">
+              <h5 class="card-title">$150</h5>
+              <p class="card-text">Alfajore havanna</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault17">
+                <label class="form-check-label" for="flexRadioDefault17">
+                  Mercado Pago
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault18" checked>
+                <label class="form-check-label" for="flexRadioDefault18">
+                  Tarjeta de Crédito
+                </label>
+              </div>
+              <div class="btn-group mb-xl-2" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ciudad
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Resistencia</a></li>
+                  <li><a class="dropdown-item" href="#">Corrientes</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-success">¡Es mío!</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center"> 
+          <div class="card mt-2 bg-secondary bg-opacity-25">
+            <img src="img/main/para_llevar/producto1.png" class="img-fluid sobre_img" alt="...">
+            <div class="card-body alto">
+              <h5 class="card-title">$200</h5>
+              <p class="card-text">Some quick example</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault19">
+                <label class="form-check-label" for="flexRadioDefault19">
+                  Mercado Pago
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault20" checked>
+                <label class="form-check-label" for="flexRadioDefault20">
+                  Tarjeta de Crédito
+                </label>
+              </div>
+              <div class="btn-group mb-xl-2" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ciudad
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Resistencia</a></li>
+                  <li><a class="dropdown-item" href="#">Corrientes</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-success">¡Es mío!</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center"> 
+          <div class="card mt-2 bg-warning">
+            <img src="img/main/para_llevar/producto1.png" class="img-fluid sobre_img" alt="...">
+            <div class="card-body alto">
+              <h5 class="card-title">$250</h5>
+              <p class="card-text">Some quick example</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault21">
+                <label class="form-check-label" for="flexRadioDefault21">
+                  Mercado Pago
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault22" checked>
+                <label class="form-check-label" for="flexRadioDefault22">
+                  Tarjeta de Crédito
+                </label>
+              </div>
+              <div class="btn-group mb-xl-2" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ciudad
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Resistencia</a></li>
+                  <li><a class="dropdown-item" href="#">Corrientes</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-success">¡Es mío!</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 text-center"> 
+          <div class="card mt-2 bg-secondary bg-opacity-25">
+            <img src="img/main/para_llevar/producto1.png" class="img-fluid sobre_img" alt="...">
+            <div class="card-body alto">
+              <h5 class="card-title">$150</h5>
+              <p class="card-text">Some quick</p>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault23">
+                <label class="form-check-label" for="flexRadioDefault23">
+                  Mercado Pago
+                </label>
+              </div>
+              <div class="form-check mb-3">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault24" checked>
+                <label class="form-check-label" for="flexRadioDefault24">
+                  Tarjeta de Crédito
+                </label>
+              </div>
+              <div class="btn-group mb-xl-2" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Ciudad
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <li><a class="dropdown-item" href="#">Resistencia</a></li>
+                  <li><a class="dropdown-item" href="#">Corrientes</a></li>
+                </ul>
+              </div>
+              <button type="button" class="btn btn-success">¡Es mío!</button>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </section>
+
     </main>
+    
     <!-- >>>>>>>>>>>FOOTER>>>>>>>>>>>>>>> -->
 
     <footer class="footer">
@@ -262,6 +460,8 @@
                 <img src="img/footer/Instagram.png" alt="instagram"></a>
         </div>
     </footer>
+
+  </div>
 
     <!-- >>>>>>>>>>>scrip de boostrap>>>>>>>>>>>>>>> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>

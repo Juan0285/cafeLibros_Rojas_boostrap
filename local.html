@@ -18,22 +18,21 @@
 
     
      <!-- >>>>>>>>>>>HEADER NAV>>>>>>>>>>>>>>> -->
-     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <header class="fixed-top">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="img/header/logo.jpg" width="55" height="55" class="d-inline-block align-text-top">
-                </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <a class="navbar-brand" href="index.html"><img src="img/header/Logo.png" class="img-fluid" alt="..."></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="local.html">Local</a>
+                    <a class="nav-link" href="local.html">En el Local</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="paraLlevar.html">Para Llevar</a>
@@ -43,381 +42,245 @@
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="contacto.html">Contacto</a>
-                  </li>
+                  </li>                
                 </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
               </div>
             </div>
           </nav>
-        </header>
+        </div>
+     </header>
     <!-- >>>>>>>>>>>CONTENIDO>>>>>>>>>>>>>>> --> 
 
-    <main class="main">
+      <main class="container margenSup">
+          <section class="row">
+            <!-- ----cafeteria----- -->
+            <div class="col-12 col-md-6 col-xl-4">
+                <h3 class="text-center mb-3">CAFETERÍA</h3>
+                <table class="table table-hover mx-1 bg-secondary rounded-3">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">CAFÉ</th>
+                        <th scope="col">DETALLES</th>
+                        <th scope="col">PRECIO</th>
+                      </tr>
+                    </thead>
+                    <tbody>
 
-        <!-- ------------1º SECCION ------------- -->
-        <section class="main__section main__section--1">
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Café bailey</td>
+                        <td>Café, licor de crema y crema</td>
+                        <td>$290</td>
+                      </tr>
 
-            <div class="opacidad"></div>
-            <div class="main__nombreSeccion">
-                <h3>CAFETERIA</h3>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Café Vienes</td>
+                        <td>Café y crema</td>
+                        <td>$280</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Café Mocca</td>
+                        <td>Café, chocolate y leche</td>
+                        <td>$250</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Café Irlandes</td>
+                        <td>Café wisky, crema, chocolate</td>
+                        <td>$310</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Café Bombom</td>
+                        <td>Café y leche condensada</td>
+                        <td>$290</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Café Affogato</td>
+                        <td>Café y Helado de vainilla</td>
+                        <td>$300</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Café menta</td>
+                        <td>Café, licor de menta, crema y chocolate rallado</td>
+                        <td>$350</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Café Frozen</td>
+                        <td>Café y hielo</td>
+                        <td>$275</td>
+                      </tr>
+
+                    </tbody>
+                </table>   
             </div>
 
-            <!-- -----------producto 1---------------- -->
+             <!-- ----Pasteleria----- -->
+            <div class="col-12 col-md-6 col-xl-4">
+                <h3 class="text-center mb-3">PASTELERIA</h3>
+                <table class="table table-hover mx-1 bg-success rounded-3">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">CAFÉ</th>
+                        <th scope="col">DETALLES</th>
+                        <th scope="col">PRECIO</th>
+                      </tr>
+                    </thead>
+                    <tbody>
 
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café bailey´s</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café, licor de crema y crema</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$290</h4>
-                </div>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Café bailey</td>
+                        <td>Café, licor de crema y crema</td>
+                        <td>$290</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Café Vienes</td>
+                        <td>Café y crema</td>
+                        <td>$280</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Café Mocca</td>
+                        <td>Café, chocolate y leche</td>
+                        <td>$250</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Café Irlandes</td>
+                        <td>Café wisky, crema, chocolate</td>
+                        <td>$310</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Café Bombom</td>
+                        <td>Café y leche condensada</td>
+                        <td>$290</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Café Affogato</td>
+                        <td>Café y Helado de vainilla</td>
+                        <td>$300</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Café menta</td>
+                        <td>Café, licor de menta, crema y chocolate rallado</td>
+                        <td>$350</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Café Frozen</td>
+                        <td>Café y hielo</td>
+                        <td>$275</td>
+                      </tr>
+
+                    </tbody>
+                </table>   
             </div>
 
-            <!-- -----------producto 2---------------- -->
+             <!-- ----Panaderia----- -->
+            <div class="col-12 col-md-12 col-xl-4">
+                <h3 class="text-center mb-3">PANADERIA</h3>
+                <table class="table table-hover mx-1 bg-warning rounded-3">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">CAFÉ</th>
+                        <th scope="col">DETALLES</th>
+                        <th scope="col">PRECIO</th>
+                      </tr>
+                    </thead>
+                    <tbody>
 
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Vienes</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café y crema</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$280</h4>
-                </div>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Café bailey</td>
+                        <td>Café, licor de crema y crema</td>
+                        <td>$290</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Café Vienes</td>
+                        <td>Café y crema</td>
+                        <td>$280</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">4</th>
+                        <td>Café Mocca</td>
+                        <td>Café, chocolate y leche</td>
+                        <td>$250</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">5</th>
+                        <td>Café Irlandes</td>
+                        <td>Café wisky, crema, chocolate</td>
+                        <td>$310</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Café Bombom</td>
+                        <td>Café y leche condensada</td>
+                        <td>$290</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Café Affogato</td>
+                        <td>Café y Helado de vainilla</td>
+                        <td>$300</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Café menta</td>
+                        <td>Café, licor de menta, crema y chocolate rallado</td>
+                        <td>$350</td>
+                      </tr>
+
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Café Frozen</td>
+                        <td>Café y hielo</td>
+                        <td>$275</td>
+                      </tr>
+
+                    </tbody>
+                </table>   
             </div>
-
-            <!-- -----------producto 3---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Mocca</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café, chocolate y leche</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$250</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 4---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Irlandes</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café wisky, crema, chocolate</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$310</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 5---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Bombom</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café y leche condensada</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$290</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 6---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Affogato</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café y Helado de vainilla</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$300</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 7---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café menta</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café, licor de menta, crema y chocolate rallado</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$350</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 8---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Frozen</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café y hielo</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$275</h4>
-                </div>
-            </div>                         
-        </section>   
-
-         <!-- ------------2º SECCION ------------- -->
-
-
-         <section class="main__section main__section--2">
-            <div class="opacidad"></div>
-            <div class="main__nombreSeccion">
-                <h3>PANADERÍA</h3>
-            </div>
-
-            <!-- -----------producto 1---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café bailey´s</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café, licor de crema y crema</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$290</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 2---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Vienes</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café y crema</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$280</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 3---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Mocca</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café, chocolate y leche</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$250</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 4---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Irlandes</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café wisky, crema, chocolate</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$310</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 5---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Bombom</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café y leche condensada</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$290</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 6---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Affogato</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café y Helado de vainilla</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$300</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 7---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café menta</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café, licor de menta, crema y chocolate rallado</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$350</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 8---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Frozen</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café y hielo</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$275</h4>
-                </div>
-            </div>                         
-        </section>   
-
-         <!-- ------------3º SECCIÓN ------------- -->
-
-         <section class="main__section main__section--3">
-            <div class="opacidad"></div>
-            <div class="main__nombreSeccion">
-                <h3>PASTELERÍA</h3>
-            </div>
-
-            <!-- -----------producto 1---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café bailey´s</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café, licor de crema y crema</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$290</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 2---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Vienes</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café y crema</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$280</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 3---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Mocca</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café, chocolate y leche</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$250</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 4---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Irlandes</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café wisky, crema, chocolate</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$310</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 5---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Bombom</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café y leche condensada</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$290</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 6---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Affogato</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café y Helado de vainilla</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$300</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 7---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café menta</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café, licor de menta, crema y chocolate rallado</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$350</h4>
-                </div>
-            </div>
-
-            <!-- -----------producto 8---------------- -->
-
-            <div class="producto">
-                <div class="producto__nombre">
-                    <h4>Café Frozen</h4>
-                </div>
-                <div class="producto__descrip">
-                    <p>Café y hielo</p>
-                </div>
-                <div class="producto__precio">
-                    <h4>$275</h4>
-                </div>
-            </div>                         
-        </section>   
-   </main>    
-
+          </section>
+      </main>
+   
 
     <!-- >>>>>>>>>>>FOOTER>>>>>>>>>>>>>>> -->
 

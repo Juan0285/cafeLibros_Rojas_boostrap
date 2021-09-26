@@ -17,73 +17,81 @@
 
     
      <!-- >>>>>>>>>>>HEADER NAV>>>>>>>>>>>>>>> -->
-     <header class="header">
+     <div class="fixed-top">
+      <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="img/header/logo.jpg" width="55" height="55" class="d-inline-block align-text-top">
-                </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="local.html">Local</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="paraLlevar.html">Para Llevar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="conocenos.html">Conocenos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                  </li>
-                </ul>
-              </div>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="img/header/Logo.png" class="img-fluid" alt="..."></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="local.html">En el Local</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="paraLlevar.html">Para Llevar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="conocenos.html">Conocenos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>                
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
             </div>
-          </nav>
-        </header>
+          </div>
+        </nav>
+      </div>
+    </div>
 
         
     <!-- >>>>>>>>>>>CONTENIDO>>>>>>>>>>>>>>> --> 
+    <main class="container-fluid margenSup bg-dark">
 
-    <main class="main">
-        <!-- ---------1 Foto Grande Unicada a la Izquierda------ -->
-
-        <section class="fotogrande">
-            <div class="fotogrande__div"></div>
-        </section>
-
-        <!-- ----------16 Fotos chicas Ubicadas a la derecha--------- -->
-
-       <div class="catalogo">
-            <div class="todasLasFotos">
-                <div class="foto1 foto__hover"></div>
-                <div class="foto2 foto__hover"></div>
-                <div class="foto3 foto__hover"></div>
-                <div class="foto4 foto__hover"></div>
-                <div class="foto5 foto__hover"></div>
-                <div class="foto6 foto__hover"></div>
-                <div class="foto7 foto__hover"></div>
-                <div class="foto8 foto__hover"></div>
-                <div class="foto9 foto__hover"></div>
-                <div class="foto10 foto__hover"></div>
-                <div class="foto11 foto__hover"></div>
-                <div class="foto12 foto__hover"></div>
-                <div class="foto13 foto__hover"></div>
-                <div class="foto14 foto__hover"></div>
-                <div class="foto15 foto__hover"></div>
-                <div class="foto16 foto__hover"></div>
-            </div>
-       </div>
+      <h1 class="text-white">Conocé nuestras delicias</h1>
+      
+      <!-- --------columna foto grande---------- -->
+          <section class="row">
+                <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+                  <img src="img/main/conocenos/fotogrande.jpg" class="img-fluid rounded-3" alt="...">
+                </div>
+          <!-- --------columna fotitos---------- -->
+                <div class="col-12 col-sm-12 col-md-4 col-lg-5 col-xl-6">
+                          <div class="row">          
+                              <div class="col-12 col-sm-6 col-xl-4 my-2">
+                                <img src="img/main/conocenos/local1.jpg" alt="" class="img-fluid rounded-3 sobre_img"></div>
+                              <div class="col-12 col-sm-6 col-xl-4 my-2">
+                                <img src="img/main/conocenos/local2.jpg" alt="" class="img-fluid rounded-3 sobre_img"></div>
+                              <div class="col-12 col-sm-6 col-xl-4 my-2">
+                                <img src="img/main/conocenos/local3.jpg" alt="" class="img-fluid rounded-3 sobre_img"></div>
+                              <div class="col-12 col-sm-6 col-xl-4 my-2">
+                                <img src="img/main/conocenos/local4.jpg" alt="" class="img-fluid rounded-3 sobre_img"></div>
+                               <div class="col-12 col-sm-6 col-xl-4 my-2">
+                                <img src="img/main/conocenos/local5.jpg" alt="" class="img-fluid rounded-3 sobre_img" ></div>
+                              <div class="col-12 col-sm-6 col-xl-4 my-2">
+                                 <img src="img/main/conocenos/local6.jpg" alt="" class="img-fluid rounded-3 sobre_img"></div>
+                              <div class="col-12 col-sm-6 col-xl-4 my-2">
+                                 <img src="img/main/conocenos/local7.jpg" alt="" class="img-fluid rounded-3 sobre_img"></div>
+                              <div class="col-12 col-sm-6 col-xl-4 my-2">
+                                 <img src="img/main/conocenos/local8.jpg" alt="" class="img-fluid rounded-3 sobre_img"></div>
+                              <div class="col-12 col-sm-6 col-xl-4 my-2">
+                                 <img src="img/main/conocenos/local9.jpg" alt="" class="img-fluid rounded-3 sobre_img"></div>
+                              <div class="col-12 col-sm-6 col-xl-4 my-2"></div>
+                          </div>                                            
+                </div>
+             
+          </section>
     </main>
 
-</main>    
 
 
     <!-- >>>>>>>>>>>FOOTER>>>>>>>>>>>>>>> -->
